@@ -1517,6 +1517,48 @@ i:before {
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.pest_btn_home{
+  /* height: 50px; */
+  width: 100px;
+  background: #4e6a72;
+  color: #fff;
+  line-height: 36px;
+  display: inline-block;
+  padding: 0px 25px;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.pest_btn_home:before {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+}
+
+.pest_btn_home:hover {
+  color: #fff;
+}
+
+.pest_btn_home:hover:before {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
 .pest_btn {
   background: #4e6a72;
   color: #fff;
@@ -1988,7 +2030,7 @@ i:before {
 }
 
 .cake_feature_item {
-  background: #fff;
+  background: #f1f1f1;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(40, 40, 40, 0.08);
