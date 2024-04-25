@@ -50,7 +50,7 @@ function addItem(event) {
   let noStocks = btnClicked.getElementsByClassName("out-of-stock-cover")[0];
   if (noStocks.style.display == "flex") return;
   let name = btnClicked.getElementsByClassName("product-name")[0].innerText;
-  let price = parseFloat(btnClicked.getElementsByClassName("product-price")[0].innerText.replace("₹ ", ""));
+  let price = parseFloat(btnClicked.getElementsByClassName("product-price")[0].innerText.replace("€ ", ""));
   let imgSrc = btnClicked.getElementsByClassName("product-img")[0].src;
   SwitchBtns(btnClicked);
   let cartItem = {
@@ -222,7 +222,7 @@ function Product(product = {}) {
               <p>${des}</p>
           </div>
           <div class='purchase'>
-              <p class='product-price'>₹ ${price}</p>
+              <p class='product-price'>€ ${price}</p>
               <span class='btn-add'>${AddBtn()}</span>
           </div>
       </div>
@@ -238,7 +238,7 @@ function CartItems(cartItem = {}) {
       </div>
       <strong class='name'>${name}</strong>
       <span class='qty-change' style="display: flex;">${QtyBtn(qty)}</span>
-      <p class='price'>₹ ${price * qty}</p>
+      <p class='price'>€ ${price * qty}</p>
       <button onclick='removeItem(this)'><i class='fas fa-trash'></i></button>
   </div>`;
 }
@@ -278,7 +278,7 @@ function CartSideNav() {
       <h2>Cart</h2>
       <div class='cart-items'></div>
       <div class='final'>
-          <strong>Total: ₹ <span class='total'>0</span>.00/-</strong>
+          <strong>Total: € <span class='total'>0</span>.00/-</strong>
           <div class='action'>
               <button onclick='buy(1)' class='btn buy'>Purchase <i class='fas fa-credit-card' style='color:#6665dd;'></i></button>
               <button onclick='clearCart()' class='btn clear'>Clear Cart <i class='fas fa-trash' style='color:#bb342f;'></i></button>
@@ -293,7 +293,7 @@ function Purchase() {
       return `<span>${item.qty} x ${item.name}</span>`;
   });
   let itemPrices = cartDetails.map((item) => {
-      return `<span>₹ ${item.price * item.qty}</span>`;
+      return `<span>€ ${item.price * item.qty}</span>`;
   });
   return `
   <div class='invoice'>
@@ -305,7 +305,7 @@ function Purchase() {
       <div class='payment'>
           <em>payment</em>
           <div>
-              <p>total amount to be paid:</p><span class='pay'>₹ ${toPay}</span>
+              <p>total amount to be paid:</p><span class='pay'>€ ${toPay}</span>
           </div>
       </div>
       <div class='order'>
@@ -324,7 +324,7 @@ function OrderConfirm() {
           <em>your order has been placed</em>
           <p>Your order-id is : <span>${orderId}</span></p>
           <p>your order will be delivered to you in 3-5 working days</p>
-          <p>you can pay <span>₹ ${totalCost}</span> by card or any online transaction method after the products have been dilivered to you</p>
+          <p>you can pay <span>€ ${totalCost}</span> by card or any online transaction method after the products have been dilivered to you</p>
       </div>
       <button onclick='okay(event)' class='btn-ok'>okay</button>
   </div>`;
