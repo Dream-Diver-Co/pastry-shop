@@ -32,6 +32,9 @@
         <link href="css/responsive.css" rel="stylesheet">
         <link rel="stylesheet" href="css/card-2.css">
 
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> -->
+
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you View the page via file:// -->
         <!--[if lt IE 9]>
@@ -51,14 +54,15 @@
                 </div>
                 <div class="float-right">
                     <ul class="h_social list_style">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                     <ul class="h_search list_style">
-                        <li class="shop_cart"><a href="cart.html"><i class="lnr lnr-cart"></i></a></li>
+                        <!-- <li class="shop_cart"><a href="cart.html"><i class="lnr lnr-cart"></i></a></li> -->
                         <li><a class="popup-with-zoom-anim" href="#test-search"><i class="fa fa-search"></i></a></li>
+                        <!-- <i class="fas fa-shopping-cart" id="cartIcon"></i> -->
                     </ul>
                 </div>
             </div>
@@ -86,7 +90,7 @@
                             <li class="dropdown submenu">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cake By Flaver</a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="chocolat.html">Chocolate Cakes </a></li>
+                                    <li><a href="card-2.html">Chocolate Cakes </a></li>
                                     <li><a href="vanilla.html">Vanilla Cakes </a></li>
                                     <li><a href="strawberry.html">Strawberry Cakes </a></li>
                                     <li><a href="cheese.html">Cheese Cakes </a></li>
@@ -345,4 +349,14 @@
     
     <script src="js/theme.js"></script>
     <script src="js/card-2.js"></script>
+    <script>
+        // Your JavaScript code here
+
+        // Function to open the cart side navigation when the shopping cart icon is clicked
+        document.getElementById("cartIcon").addEventListener("click", function() {
+            sideNav(1);
+        });
+
+        // Your other JavaScript functions here
+    </script>
 </body>

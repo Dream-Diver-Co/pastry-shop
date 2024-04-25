@@ -1,6 +1,6 @@
 const productDetails = [
   {
-      name: "Airpods Pro",
+      name: "Birth Day",
       price: 24900,
       imageUrl: "img/cake-feature/bd.jpeg",
       qty: 10,
@@ -8,34 +8,34 @@ const productDetails = [
       des: "AirPods Pro have."
   },
   {
-      name: "Apple Watch",
+      name: "Chocolate Red",
       price: 40900,
       // imageUrl: "https://purepng.com/public/uploads/large/apple-watch-pcq.png",
-      imageUrl: "img/cake-feature/bd.jpeg",
+      imageUrl: "img/cake-feature/chocolate.jpeg",
       qty: 15,
       heading: "You’ve never seen a watch like this",
       des: "The most ."
   },
   {
-      name: "Macbook Pro",
+      name: "Strawberry",
       price: 199900,
-      imageUrl: "img/cake-feature/bd.jpeg",
+      imageUrl: "img/cake-feature/strawberry.jpeg",
       qty: 20,
       heading: "The best for the brightest",
       des: "Designed for those who defy limits and change the world,"
   },
   {
-      name: "iPhone 11 pro",
+      name: "Pastry",
       price: 106600,
-      imageUrl: "img/cake-feature/bd.jpeg",
+      imageUrl: "img/cake-feature/c-feature-1.jpg",
       qty: 35,
       heading: "Pro cameras. Pro display. Pro performance",
-      des: "A mind‑blowing chip that doubles down on machine learning and pushes ."
+      des: "A mind‑blowing chip that doubles down..."
   },
   {
-      name: "iPad Pro",
+      name: "Anniversary",
       price: 71900,
-      imageUrl: "img/cake-feature/bd.jpeg",
+      imageUrl: "img/cake-feature/anniversary.jpeg",
       qty: 25,
       heading: "Your next computer is not a computer",
       des: "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up."
@@ -205,8 +205,8 @@ function Product(product = {}) {
   return `
   <div class='card'>
       <div class='top-bar'>
-          <i class='fab fa-apple'></i>
-          <em class="stocks">In Stock</em>
+          <i class='fa fa-birthday-cake'></i>
+          <em class="stocks">In Available</em>
       </div>
       <div class='img-container'>
           <img class='product-img' src='${imageUrl}' alt='' />

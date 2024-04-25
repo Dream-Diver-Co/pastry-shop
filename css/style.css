@@ -124,6 +124,9 @@ i:before {
 .main_title {
   padding-bottom: 50px;
 }
+.home-card-text{
+  padding-bottom: 10px !important;
+}
 
 .main_title h2 {
   color: #3e606b;
